@@ -1,0 +1,321 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tit {
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  text-transform: uppercase;
+  color: #363F73;
+}
+
+.tit hr {
+  background-color: #63caa7;
+  height: 7px;
+  border: 0px;
+  border-radius: 2px;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comentarios h1{
+  color: #63caa7;
+}
+
+/* Parte de Arriba */
+.arriba {
+  background-color: #FAF9F8;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.amarrillo {
+  color: #363F73;
+}
+
+.azul {
+  color: #5EBFA4;
+}
+
+.logo,
+#menu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vinculos {
+  font-family: helvetica;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#menu {
+  padding: 11px;
+  margin-left: 100px;
+}
+
+
+.menu {
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #F2BA52;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu:hover {
+  background-color: #eecf94;
+}
+
+/* Parte Abajo */
+.abajo {
+  text-align: center;
+  padding: 10px;
+  color: #B0D9CD;
+  background: #FAF9F8;
+}
+
+.redes {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.redes img {
+  width: 30px;
+  margin: 10px;
+}
+
+/* inicio de seccion */
+.prueba {
+  margin: auto;
+  text-align: center;
+}
+
+#formu1 {
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15%;
+  background: #eecf94;
+  padding: 20px 50px;
+}
+
+#formu1 h1 {
+  color: white;
+}
+
+#formu1 .form .item input {
+  width: 200px;
+  border: 0;
+  border-bottom: 5px solid white;
+  font-size: 18px;
+  background: #ffffff00;
+  color: white;
+  padding: 5px 10px;
+}
+
+#formu1 .btn {
+  border: 0;
+  padding: 10px 30px;
+  margin-top: 18px;
+  font-size: 18px;
+  color: #363F73;
+  border-radius: 25px;
+  background: #FAF9F8;
+}
+
+#formu1 .btn:hover {
+  background: #5EBFA4;
+}
+
+/* Mostrar Contacto */
+.tab {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+table{
+  border:1px #363F73 solid;
+  border-radius: 10px;
+  border-spacing: 5px;
+  width: 600px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+table th{
+  background-color: #363F73;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+table td{
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 1px #363F73 solid;
+  color: #F2BA52;
+}
+
+.es{
+  text-decoration: none;
+  text-align: center;
+  color: #F2BA52;
+}
+
+tr:hover{
+  background: #FAF9F8;
+}
+
+.tam{
+  width: 30px;
+}
+
+
+/* Fornulario agregar datos */
+.fo {
+  margin: auto;
+  text-align: center;
+}
+
+.rojo {
+  color: red;
+  font-weight: bold;
+}
+
+.contfor,
+fieldset {
+  border: 0px;
+}
+
+.campos{
+  vertical-align: top;
+  display: inline-block;
+}
+
+.req {
+  margin: 20px;
+  color: #B0D9CD;
+}
+
+.cam {
+  margin: auto;
+  text-align: center;
+
+}
+
+.campos:nth-child(1){
+  text-align: right;
+  width: 250px;
+}
+
+.etiquet {
+  margin-top: 15px;
+  vertical-align: top;
+  display: inline-block;
+  color: #F2BA52;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.etiqueta1,
+.etiqueta2 {
+  background: #FAF9F8;
+  border-radius: 10px;
+  border: 1px dotted #363F73;
+  padding: 10px;
+  vertical-align: top;
+  display: inline-block;
+  width: 300px;
+}
+
+.etiqueta2 {
+  height: 200px;
+  resize: none;
+}
+
+.btn2 {
+  background-color: #363F73;
+  border: 0px;
+  padding: 8px 40px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn2:focus {
+  color: white;
+  background-color: #5EBFA4;
+}
+
+/* ver comemtarios */
+.ver{
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.comentarios,.perfil{
+  margin: auto;
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.vercomen{
+  margin: auto;
+  margin-top: 40px;
+border: 1px dotted #5EBFA4;
+width: 500px;
+border-radius: 10px;
+}
+
+.color{
+  color: #F2BA52;
+}
+
+.datoss{
+  padding:10px;
+  color: #363F73;
+}
+
+/* Ver paquetes */
+.footo{
+  width: 100px;
+}
+
+.panel{
+  color: #363F73;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.panel img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
