@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,24 +17,24 @@
         <h1>Login</h1>
 
         <?php
-            $errorusuario = isset($_GET["errorusuario"]);
-            if ($errorusuario == "SI") {
-              echo '<h3 class="aviso">Datos incorrectos</h3>';
-            }
-            ?>
+        $errorusuario = isset($_GET["errorusuario"]);
+        if ($errorusuario == "SI") {
+          echo '<h3 class="aviso">Datos incorrectos</h3>';
+        }
+        ?>
 
-          <div class="form">
-            <div class="item">
-                  <input class="item" type="text" placeholder="Usuario" name="usuario">
-            </div>
-
-            <div class="item">
-                    <input class="item" type="password" placeholder="Password" name="contrasena">
-            </div>
+        <div class="form">
+          <div class="item">
+            <input class="item" type="text" placeholder="Usuario" name="usuario">
           </div>
 
-          <input class="btn" type="submit" value="Iniciar sesión" />
-          <input class="btn" type="submit" value="Registrar" />
+          <div class="item">
+            <input class="item" type="password" placeholder="Password" name="contrasena">
+          </div>
+        </div>
+
+        <input class="btn" type="submit" value="Iniciar sesión" />
+        <a href="/proyecto web/admin/agregarusuario.php"><input class="btn" type='button' value="Agregar Usuario"></a>
       </div>
     </form>
   </div>
