@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-12-2021 a las 02:29:38
+-- Tiempo de generación: 08-11-2022 a las 07:22:45
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.12
 
@@ -24,24 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `admin`
---
-
-CREATE TABLE `admin` (
-  `usuario` varchar(20) NOT NULL,
-  `contrasena` varchar(20) NOT NULL
-;
-
---
--- Volcado de datos para la tabla `admin`
---
-
-INSERT INTO `admin` (`usuario`, `contrasena`) VALUES
-('admin', 'admin');
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `contacto`
 --
 
@@ -50,7 +32,7 @@ CREATE TABLE `contacto` (
   `nombre` varchar(70) NOT NULL,
   `correo` varchar(70) NOT NULL,
   `comentario` varchar(300) NOT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `contacto`
@@ -74,7 +56,7 @@ CREATE TABLE `paquetes` (
   `categoria` varchar(50) NOT NULL,
   `precio` varchar(10) NOT NULL,
   `detalle` varchar(500) NOT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `paquetes`
@@ -82,8 +64,29 @@ CREATE TABLE `paquetes` (
 
 INSERT INTO `paquetes` (`id`, `ruta`, `nombre`, `categoria`, `precio`, `detalle`) VALUES
 (5, 'fotos/Expresiones Regulares - Identificadores (1).png', 'Antonio Javier Flores Tinal', '546', '$10,000.00', 'rtewetyew'),
-(6, '/fotos/instagram.png', 'Instituto', 'Familiar', '$12', 'zdxf'),
 (7, 'fotos/egipto.jpg', 'Egipto', 'Familiar', '$10,000.00', '-paquete para toda la familia\r\n-Hotel incluido');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(10) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `usuario` varchar(20) NOT NULL,
+  `contra` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `contra`) VALUES
+(1, 'Equipo4', 'aquipo4', '1234'),
+(3, 'yo', 'rtr', '234'),
+(4, 'antonio', 'admin', '1234');
 
 --
 -- Índices para tablas volcadas
@@ -102,6 +105,12 @@ ALTER TABLE `paquetes`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -116,6 +125,12 @@ ALTER TABLE `contacto`
 --
 ALTER TABLE `paquetes`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
