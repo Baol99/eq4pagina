@@ -36,6 +36,7 @@
           </div>
 
           <input class="btn" type="submit" value="Iniciar sesión" />
+          <input class="btn" type="submit" value="Registrar" />
       </div>
     </form>
   </div>
